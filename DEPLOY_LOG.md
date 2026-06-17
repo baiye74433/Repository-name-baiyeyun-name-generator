@@ -51,18 +51,58 @@
 
 ### 当前未完成
 
-- GitHub 仓库未创建或未上传
-- Cloudflare Pages 未连接仓库
-- 域名未完成 Pages 发布验证
+- GitHub 仓库已创建并已上传
+- Cloudflare Pages 已连接仓库并已部署
+- Pages 临时域名已上线：
+  - `https://repository-name-baiyeyun-name-generator.pages.dev/`
+- 自定义域名 `baiyeyun.xyz` 尚未绑定成功
+- Cloudflare 提示：需要先把 `baiyeyun.xyz` 的 DNS 管理转入 Cloudflare
+- Cloudflare 分配的 nameserver：
+  - `darwin.ns.cloudflare.com`
+  - `meiling.ns.cloudflare.com`
+- 当前需要删除的旧 nameserver：
+  - `dns13.hichina.com`
+  - `dns14.hichina.com`
 
 ### 当前建议执行顺序
 
-1. 本地预览
-2. GitHub 上传
-3. Cloudflare Pages 发布
-4. 绑定域名
+1. 登录域名注册商
+2. 把 `baiyeyun.xyz` 的 nameserver 改成 Cloudflare 提供的 nameserver
+3. 等 Cloudflare 确认 DNS 生效
+4. 回到 Pages 项目绑定 `baiyeyun.xyz`
 5. 上线后补广告与统计
 
 ### 备注
 
 当前这套站已经可以作为“部署源文件”使用，不需要重新生成。
+
+## 2026-06-17 暂停审核记录
+
+用户要求暂停：
+
+```text
+先暂停保存好，写好日志，用户这边需要审核。
+```
+
+当前已暂停所有外部操作。
+
+暂停点：
+
+- Cloudflare Pages 已部署成功
+- 临时域名已验证可访问：
+  - `https://repository-name-baiyeyun-name-generator.pages.dev/`
+- 自定义域名 `baiyeyun.xyz` 尚未最终绑定
+- Cloudflare 已给出 nameserver：
+  - `darwin.ns.cloudflare.com`
+  - `meiling.ns.cloudflare.com`
+- 需要用户审核后，再决定是否到域名注册商修改 nameserver
+
+恢复方式：
+
+用户说：
+
+```text
+审核好了，继续
+```
+
+然后继续处理 `baiyeyun.xyz` 的 DNS 和 Pages 绑定。

@@ -87,4 +87,27 @@
 
 ## 当前接管结论
 
-这个项目现在最适合继续做“部署与上线”，不是重新设计，不是重写代码。
+这个项目已经完成 GitHub 推送和 Cloudflare Pages 临时域名部署。
+
+当前因用户要求审核，暂停在自定义域名 DNS 转移前。
+
+临时线上地址：
+
+```text
+https://repository-name-baiyeyun-name-generator.pages.dev/
+```
+
+GitHub 仓库：
+
+```text
+https://github.com/baiye74433/Repository-name-baiyeyun-name-generator
+```
+
+待审核后继续：
+
+1. 用户将 `baiyeyun.xyz` 的 nameserver 改为：
+   - `darwin.ns.cloudflare.com`
+   - `meiling.ns.cloudflare.com`
+2. 等 Cloudflare 激活域名
+3. 回到 Pages 项目绑定 `baiyeyun.xyz`
+4. 验证正式域名访问
