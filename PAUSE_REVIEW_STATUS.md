@@ -1,92 +1,59 @@
 # 项目状态
 
-## 最后更新
-
-2026-06-17
+最后更新：2026-06-17
 
 ## 当前状态
 
-正常运行，等待下一步操作。
+正常运行，持续扩展中。
 
-## 已完成事项
+## 已完成
 
-### 1. 网站开发与上线
+### 网站
+- 50 个工具页（Creator 10 / Business 14 / Pets 3 / Gaming 13 / Fun 5）
+- 17 篇 SEO 博客文章
+- 正式域名 baiyeyun.xyz 正常运行
+- GitHub + Cloudflare Pages 自动部署
 
-- 英文 AI Name Generator 工具站
-- 30 个工具页
-- 正式域名：`https://baiyeyun.xyz/`
-- Cloudflare Pages 自动部署
-- GitHub 仓库：`https://github.com/baiye74433/Repository-name-baiyeyun-name-generator`
+### SEO 基础
+- Google Search Console 已验证
+- sitemap.xml 已提交（含所有工具页 + 博客页）
+- 每个页面有 canonical, meta description, 结构化数据
+- robots.txt 正确配置
 
-### 2. 工具页扩展（2026-06-17）
+### 统计分析
+- Cloudflare Web Analytics 已启用
+- 隐私优先，无需 Cookie 弹窗
 
-新增 10 个工具页，总数从 20 → 30。
-
-新增工具：
-
-- Team Name Generator
-- Band Name Generator
-- Twitch Username Generator
-- Twitter Username Generator
-- Restaurant Name Generator
-- Coffee Shop Name Generator
-- Photography Business Name Generator
-- Hair Salon Name Generator
-- Dragon Name Generator
-- Startup Name Generator
-
-### 3. 项目文档
-
-- `PROJECT_DEV_LOG.md`
-- `DEPLOY_LOG.md`
-- `AI_HANDOFF.md`
-- `RETURN_LATER.md`
-- `PAUSE_REVIEW_STATUS.md`（本文件）
-- `USER_MANUAL.md`
-- `SETUP_AND_DEPLOY.md`
-
-## 尚未完成事项
-
-### 1. Google Search Console
-
-- 需要验证站点所有权
-- 提交 sitemap.xml
-- 手动请求索引
-
-### 2. Cloudflare Web Analytics
-
-- 需要在 Cloudflare 后台开启
-- 添加一行跟踪代码到网站
-
-### 3. SEO 博客文章
-
-- 当前只有工具页，没有长文本内容
-- AdSense 审核要求 20-30 篇原创文章（600+ 字）
-- 需要创建 `/blog/` 目录并撰写文章
-
-### 4. AdSense 申请
-
-- 建议域名满 6 个月后申请
-- 需要先完成博客内容建设
-- 需要有一些自然搜索流量
-
-## 下一步操作建议
+## 待办
 
 | 优先级 | 事项 | 状态 |
 |--------|------|------|
-| P0 | Google Search Console 验证 + 提交 sitemap | 待执行 |
-| P0 | Cloudflare Web Analytics 接入 | 待执行 |
-| P1 | 写 10 篇 SEO 博客文章 | 待执行 |
-| P1 | 给现有工具页补充 SEO 文字内容 | 待执行 |
-| P2 | 继续扩展更多工具页 | 持续 |
-| P2 | 申请 AdSense | 3-4 个月后 |
+| P1 | 博客文章写到 30+ 篇 | 17/30 |
+| P2 | 继续扩展工具页 | 持续 |
+| P2 | 等域名满 6 个月 | 2026-12 后 |
+| P3 | 申请 AdSense | 条件成熟后 |
+| P3 | 社交媒体推广 | 未开始 |
+| P3 | 外链建设 | 未开始 |
+
+## 添加新工具的流程
+
+1. 在 `tools/` 创建 HTML 文件（复制已有工具页模板）
+2. 修改：标题、描述、分类、关键词、种子数据、FAQ、相关工具
+3. 更新 `tools/index.html`（加入新工具到对应分类）
+4. 更新 `sitemap.xml`（新增 URL）
+5. 更新 `index.html`（首页工具数量）
+6. 推送到 GitHub → 自动部署
+
+## 添加新博客的流程
+
+1. 在 `blog/` 创建 HTML 文件（复制已有博客模板）
+2. 修改：标题、meta description、canonical URL、正文内容
+3. 更新 `sitemap.xml`（新增 URL）
+4. 推送到 GitHub → 自动部署
 
 ## 恢复操作
 
 如果以后再回来，先读：
-
-- `RETURN_LATER.md`
-- `PROJECT_DEV_LOG.md`
-- `DEPLOY_LOG.md`
-
-然后决定是否继续执行上表中的待办事项。
+- RETURN_LATER.md
+- PROJECT_DEV_LOG.md
+- AI_HANDOFF.md
