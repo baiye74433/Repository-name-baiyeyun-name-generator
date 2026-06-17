@@ -109,3 +109,38 @@
 ```
 
 然后继续处理 `baiyeyun.xyz` 的 DNS 和 Pages 绑定。
+
+## 2026-06-17 最终收口记录
+
+当前项目已完成正式上线。
+
+正式域名：
+
+```text
+https://baiyeyun.xyz/
+```
+
+备份 Pages 地址：
+
+```text
+https://repository-name-baiyeyun-name-generator.pages.dev/
+```
+
+GitHub 仓库：
+
+```text
+https://github.com/baiye74433/Repository-name-baiyeyun-name-generator
+```
+
+适合长期搁置时保存的恢复入口：
+
+- `RETURN_LATER.md`
+- `PAUSE_REVIEW_STATUS.md`
+- `PROJECT_DEV_LOG.md`
+
+当前不建议再改动核心架构，后续只做：
+
+1. 新工具页
+2. 内容补充
+3. 统计分析
+4. 广告准备

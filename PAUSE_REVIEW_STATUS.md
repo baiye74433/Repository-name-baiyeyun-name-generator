@@ -164,4 +164,19 @@ meiling.ns.cloudflare.com
 
 项目已经可以通过 Cloudflare 临时域名访问。
 
-现在暂停在自定义域名 DNS 转移前。
+现在已完成正式域名绑定，长期暂停也不会丢失项目状态。
+
+正式站点：
+
+```text
+https://baiyeyun.xyz/
+```
+
+如果以后再回来，先看：
+
+- `RETURN_LATER.md`
+- `PROJECT_DEV_LOG.md`
+- `DEPLOY_LOG.md`
+- `SETUP_AND_DEPLOY.md`
+
+然后再决定是否继续加内容、加统计、做广告准备。
