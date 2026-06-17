@@ -63,6 +63,9 @@
 - 当前需要删除的旧 nameserver：
   - `dns13.hichina.com`
   - `dns14.hichina.com`
+- 2026-06-17：阿里云已确认当前 DNS 服务器变更为：
+  - `darwin.ns.cloudflare.com`
+  - `meiling.ns.cloudflare.com`
 
 ### 当前建议执行顺序
 
