@@ -2,7 +2,7 @@
 
 ## 项目一句话
 
-这是一个准备部署到 `Cloudflare Pages` 的英文 `Name Generator` 静态工具站，域名是 `baiyeyun.xyz`。
+英文 `Name Generator` 静态工具站，域名 `baiyeyun.xyz`，部署在 Cloudflare Pages。
 
 ## 当前完成度
 
@@ -11,18 +11,21 @@
 - [x] 网站文件已生成
 - [x] SEO 基础文件已生成
 - [x] 域名已写入站点文件
-- [ ] 本地浏览器验收
-- [ ] GitHub 仓库创建与上传
-- [ ] Cloudflare Pages 发布
-- [ ] 自定义域名绑定验证
-- [ ] 上线后收录与广告准备
+- [x] 本地浏览器验收
+- [x] GitHub 仓库创建与上传
+- [x] Cloudflare Pages 发布
+- [x] 自定义域名绑定验证
+- [x] 工具页扩展（20 → 30）
+- [ ] Google Search Console 提交
+- [ ] Cloudflare Web Analytics 接入
+- [ ] SEO 博客文章撰写
+- [ ] AdSense 申请
 
 ## 关键文件
 
-- 站点目录：`C:\Users\胡雾屿\Documents\Codex\2026-06-17\ai\outputs\name-generator-site`
-- 生成脚本：`C:\Users\胡雾屿\Documents\Codex\2026-06-17\ai\work\site-build\generate-site.js`
-- 样式：`C:\Users\胡雾屿\Documents\Codex\2026-06-17\ai\outputs\name-generator-site\assets\styles.css`
-- 前端逻辑：`C:\Users\胡雾屿\Documents\Codex\2026-06-17\ai\outputs\name-generator-site\assets\app.js`
+- GitHub 仓库：`https://github.com/baiye74433/Repository-name-baiyeyun-name-generator`
+- 正式站：`https://baiyeyun.xyz/`
+- 备份地址：`https://repository-name-baiyeyun-name-generator.pages.dev/`
 
 ## 技术栈
 
@@ -31,13 +34,7 @@
 - 原生 JavaScript
 - 静态文件部署
 - Cloudflare Pages
-
-## 为什么这样做
-
-- 用户不会技术，不适合复杂后端
-- 需要免费或极低成本上线
-- 需要后续能扩展成更多工具页
-- 需要更像“工具站”而不是“采集站”
+- GitHub
 
 ## 接手时不要改的方向
 
@@ -49,65 +46,104 @@
 
 ## 接手时优先做的事
 
-1. 启动本地静态预览
-2. 检查首页和至少 2 个工具页
-3. 把整个 `name-generator-site` 上传到 GitHub
-4. 在 Cloudflare Pages 创建项目
-5. 绑定 `baiyeyun.xyz`
-
-## 可能遇到的阻碍
-
-- GitHub 可能需要登录或验证码
-- Cloudflare 可能需要点击确认
-- Pages 创建时可能需要手动点几下网页
+1. 检查 `https://baiyeyun.xyz/` 是否正常
+2. 读 `PROJECT_DEV_LOG.md` 和 `DEPLOY_LOG.md`
+3. 继续扩展工具页
+4. 接入 Google Search Console
+5. 接入 Cloudflare Web Analytics
+6. 写 SEO 博客文章
 
 ## 页面内容情况
 
-当前页面已经具备：
+当前页面：
 
 - 首页
 - 工具总页
-- 20 个细分工具页
+- 30 个细分工具页（9 Creator + 11 Business + 3 Pets + 6 Gaming + 1 Fun）
 - About
 - Contact
 - Privacy Policy
 - Terms
-- Robots
-- Sitemap
+- 404
+- robots.txt
+- sitemap.xml
+
+## 工具页列表
+
+### Creator（9 个）
+
+1. YouTube Name Generator
+2. TikTok Username Generator
+3. Instagram Username Generator
+4. Discord Name Generator
+5. Podcast Name Generator
+6. Blog Name Generator
+7. Band Name Generator
+8. Twitch Username Generator
+9. Twitter Username Generator
+
+### Business（11 个）
+
+1. Business Name Generator
+2. Brand Name Generator
+3. Shop Name Generator
+4. Bakery Name Generator
+5. Clothing Brand Name Generator
+6. Etsy Shop Name Generator
+7. Restaurant Name Generator
+8. Coffee Shop Name Generator
+9. Photography Business Name Generator
+10. Hair Salon Name Generator
+11. Startup Name Generator
+
+### Pets（3 个）
+
+1. Pet Name Generator
+2. Cat Name Generator
+3. Dog Name Generator
+
+### Gaming（6 个）
+
+1. Gamer Tag Generator
+2. Fantasy Name Generator
+3. DnD Name Generator
+4. Guild Name Generator
+5. Team Name Generator
+6. Dragon Name Generator
+
+### Fun（1 个）
+
+1. WiFi Name Generator
 
 ## 后续扩展建议
 
-后续可以继续新增这几类页面：
+### 更多工具页
 
-1. `nickname ideas` 页面
-2. `baby name` 页面
-3. `business name by niche` 页面
-4. `A-Z names` 页面
-5. `name ideas by style` 页面
+- Baby Name Generator
+- Nickname Generator
+- Ship Name Generator
+- Clan Name Generator
+- Anime Name Generator
+- Superhero Name Generator
+- Pirate Name Generator
+- Robot Name Generator
+- Witch Name Generator
+- Elf Name Generator
+
+### 内容扩展
+
+- 为每个工具页写 800-1200 字的 SEO 引导文章
+- 创建 `/blog/` 目录
+- 目标：20-30 篇原创文章（AdSense 审核要求）
+
+### 流量获取
+
+- Google Search Console 提交 sitemap
+- Cloudflare Web Analytics 接入
+- 逐步积累自然搜索流量
 
 ## 当前接管结论
 
-这个项目已经完成 GitHub 推送和 Cloudflare Pages 临时域名部署。
+项目已完成第一阶段上线，30 个工具页全部在线。
 
-当前因用户要求审核，暂停在自定义域名 DNS 转移前。
-
-临时线上地址：
-
-```text
-https://repository-name-baiyeyun-name-generator.pages.dev/
-```
-
-GitHub 仓库：
-
-```text
-https://github.com/baiye74433/Repository-name-baiyeyun-name-generator
-```
-
-待审核后继续：
-
-1. 用户将 `baiyeyun.xyz` 的 nameserver 改为：
-   - `darwin.ns.cloudflare.com`
-   - `meiling.ns.cloudflare.com`
-2. 等 Cloudflare 激活域名
-3. 回到 Pages 项目绑定 `baiyeyun.xyz`
-4. 验证正式域名访问
+下一步重点是 SEO 内容建设和流量获取。

@@ -144,3 +144,64 @@ https://github.com/baiye74433/Repository-name-baiyeyun-name-generator
 2. 内容补充
 3. 统计分析
 4. 广告准备
+
+## 2026-06-17 第二次扩展部署记录
+
+### 操作人
+
+新 AI 助手接手项目后执行。
+
+### 已执行
+
+- 克隆 GitHub 仓库到 AI 工作区
+- 创建 10 个新工具页面（完整复用已有模板结构）
+- 更新 `tools/index.html`，新工具加入对应分类
+- 更新 `sitemap.xml`，新增 10 个 URL
+- 更新 `index.html`，工具数从 20 改为 30
+- Git commit：`629293a Add 10 new name generator tools`
+- 推送到 GitHub main 分支
+- Cloudflare Pages 自动部署成功
+
+### 新增工具页
+
+| 分类 | 工具名 | 文件名 |
+|------|--------|--------|
+| Gaming | Team Name Generator | team-name-generator.html |
+| Creator | Band Name Generator | band-name-generator.html |
+| Creator | Twitch Username Generator | twitch-username-generator.html |
+| Creator | Twitter Username Generator | twitter-username-generator.html |
+| Business | Restaurant Name Generator | restaurant-name-generator.html |
+| Business | Coffee Shop Name Generator | coffee-shop-name-generator.html |
+| Business | Photography Business Name Generator | photography-business-name-generator.html |
+| Business | Hair Salon Name Generator | hair-salon-name-generator.html |
+| Gaming | Dragon Name Generator | dragon-name-generator.html |
+| Business | Startup Name Generator | startup-name-generator.html |
+
+### 部署验证
+
+所有新页面已验证 200 OK：
+
+- https://baiyeyun.xyz/tools/team-name-generator.html ✓
+- https://baiyeyun.xyz/tools/band-name-generator.html ✓
+- https://baiyeyun.xyz/tools/twitch-username-generator.html ✓
+- https://baiyeyun.xyz/tools/twitter-username-generator.html ✓
+- https://baiyeyun.xyz/tools/restaurant-name-generator.html ✓
+- https://baiyeyun.xyz/tools/coffee-shop-name-generator.html ✓
+- https://baiyeyun.xyz/tools/photography-business-name-generator.html ✓
+- https://baiyeyun.xyz/tools/hair-salon-name-generator.html ✓
+- https://baiyeyun.xyz/tools/dragon-name-generator.html ✓
+- https://baiyeyun.xyz/tools/startup-name-generator.html ✓
+
+工具总页已更新：https://baiyeyun.xyz/tools/ ✓
+首页已更新：https://baiyeyun.xyz/ ✓
+
+### 当前工具页总数
+
+30 个
+
+### 待办
+
+- Google Search Console 提交 sitemap
+- Cloudflare Web Analytics 接入
+- SEO 博客文章撰写（AdSense 审核前置准备）
+- 继续扩展更多工具页

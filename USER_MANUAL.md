@@ -2,97 +2,69 @@
 
 ## 这个网站是什么
 
-这是一个英文 `AI Name Generator` 工具站。
+英文 `AI Name Generator` 工具站。
 
-用户可以用它生成：
+用户可以用它生成各种名字和用户名：
 
-- 商业名称
-- 品牌名称
-- YouTube 名称
-- TikTok 用户名
-- Instagram 用户名
-- 宠物名字
-- 游戏名
-- 奇幻角色名
-- WiFi 名称
-- Etsy 店铺名
+- 商业名称、品牌名称、店铺名称
+- YouTube、TikTok、Instagram、Twitter、Twitch、Discord 用户名
+- 宠物名字（猫、狗）
+- 游戏名（Fantasy、DnD、Gamer Tag、Guild、Team、Dragon）
+- 其他（WiFi 名称、Band 名、Restaurant 名、Coffee Shop 名等）
 
-当前域名计划使用：
+正式域名：`https://baiyeyun.xyz/`
 
-- `baiyeyun.xyz`
+## 当前工具页（30 个）
 
-## 当前网站入口
+### Creator（9 个）
 
-本地预览地址：
+YouTube / TikTok / Instagram / Discord / Podcast / Blog / Band / Twitch / Twitter
 
-- `http://127.0.0.1:4173/index.html`
+### Business（11 个）
 
-当前还没有正式发布到公网。
+Business / Brand / Shop / Bakery / Clothing Brand / Etsy Shop / Restaurant / Coffee Shop / Photography Business / Hair Salon / Startup
 
-## 网站已经有什么功能
+### Pets（3 个）
 
-### 1. 首页
+Pet / Cat / Dog
 
-首页包含：
+### Gaming（6 个）
 
-- 网站定位
-- 热门工具入口
-- 分类入口
-- 使用流程说明
+Gamer Tag / Fantasy / DnD / Guild / Team / Dragon
 
-### 2. 工具总页
+### Fun（1 个）
 
-地址：
+WiFi
 
-- `/tools/index.html`
-
-功能：
-
-- 查看全部工具
-- 按分类浏览
-- 搜索工具
-
-### 3. 单个工具页
+## 工具页功能
 
 每个工具页都有：
 
-- 名字生成器
-- 关键词输入框
-- 风格选择
-- 一键生成
-- 单个名字复制
-- 全部结果复制
-- 保存喜欢的名字
-- 候选名单复制
-- 候选名单清空
-- 使用技巧
-- FAQ
-- 相关工具
-- 继续浏览推荐
+1. **名字生成器** — 输入关键词 + 选择风格，一键生成
+2. **Shuffle ideas** — 随机换一批结果
+3. **Copy all** — 复制全部结果
+4. **Save** — 保存单个名字到候选名单
+5. **Your shortlist** — 候选名单，支持复制和清空
+6. **Prompt ideas** — 快速填充关键词的快捷按钮
+7. **Starter list** — 预设的 12 个示例名字
+8. **FAQ** — 常见问题
+9. **Related tools** — 相关工具推荐
+10. **Keep browsing** — 更多工具推荐
 
 ## 你后面怎么用
 
 你不需要改代码。
 
-你只需要做 3 件事：
+日常操作：
 
-1. 看本地页面效果
-2. 确认可以上线
-3. 让我继续发到 GitHub 和 Cloudflare Pages
+1. 看网站是否正常运行
+2. 决定要新增什么工具
+3. 让 AI 助手帮你创建新页面并部署
 
-## 后面上线后要补什么
+## 后续待办
 
-上线后建议补：
-
-1. 真实联系邮箱
-2. Google Search Console
-3. 网站统计
-4. 更多工具页
-5. 更多长尾内容页
-6. 广告申请前再补内容厚度
-
-## 当前建议
-
-当前网站已经不是空模板，已经可以进入 GitHub 和 Cloudflare Pages 发布阶段。
-
-建议先上线一个最小可用版本，后面再继续扩展页面。
+- Google Search Console 提交 sitemap
+- Cloudflare Web Analytics 接入
+- 写 SEO 博客文章
+- 继续扩展工具页
+- 申请 AdSense（域名满 6 个月后）

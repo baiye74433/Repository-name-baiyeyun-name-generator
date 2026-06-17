@@ -116,52 +116,84 @@
 - `BUILD_PROCESS.md`
 - `DEPLOY_LOG.md`
 
+### 阶段 8：正式上线与域名绑定
+
+- GitHub 推送完成
+- Cloudflare Pages 自动部署
+- 临时域名可访问：`https://repository-name-baiyeyun-name-generator.pages.dev/`
+- DNS 从阿里云转入 Cloudflare
+- 自定义域名 `baiyeyun.xyz` 绑定成功
+- 正式站上线：`https://baiyeyun.xyz/`
+
+### 阶段 9：工具页扩展（新 AI 接手）
+
+2026-06-17，新 AI 助手接手项目，完成以下工作：
+
+新增 10 个工具页：
+
+1. Team Name Generator（Gaming）
+2. Band Name Generator（Creator）
+3. Twitch Username Generator（Creator）
+4. Twitter Username Generator（Creator）
+5. Restaurant Name Generator（Business）
+6. Coffee Shop Name Generator（Business）
+7. Photography Business Name Generator（Business）
+8. Hair Salon Name Generator（Business）
+9. Dragon Name Generator（Gaming）
+10. Startup Name Generator（Business）
+
+同步更新：
+
+- `tools/index.html`（新工具加入对应分类）
+- `sitemap.xml`（新增 10 个 URL）
+- `index.html`（工具数从 20 改为 30）
+
+工具页总数：20 → 30
+
+分类分布：
+
+- Creator：6 → 9
+- Business：6 → 11
+- Pets：3
+- Gaming：4 → 6
+- Fun：1
+
 ## 当前状态
 
-截至当前：
+截至 2026-06-17：
 
-- 本地网站可以运行
-- 主要页面可以打开
-- 核心工具功能已完成
+- 正式站 `https://baiyeyun.xyz/` 正常运行
+- GitHub 仓库已推送，Cloudflare Pages 自动部署成功
+- 30 个工具页全部上线
 - 文档已补齐
-- 尚未推送 GitHub
-- 尚未发布 Cloudflare Pages
-
-## 当前目录
-
-```text
-C:\Users\胡雾屿\Documents\Codex\2026-06-17\ai\outputs\name-generator-site
-```
+- 尚未接入统计分析
+- 尚未提交 Google Search Console
+- 尚未申请广告
 
 ## 下一步
 
-1. 初始化 Git 仓库
-2. 创建 GitHub 远程仓库
-3. 推送代码
-4. 创建 Cloudflare Pages 项目
-5. 绑定 `baiyeyun.xyz`
-6. 上线验收
+1. Google Search Console 验证 + 提交 sitemap
+2. Cloudflare Web Analytics 接入
+3. 写 SEO 博客文章（为 AdSense 审核做准备）
+4. 继续扩展工具页
+5. 域名满 6 个月后申请 AdSense
 
 ## 风险记录
 
-### 1. GitHub 登录验证
+### 1. 广告申请
 
-可能需要用户手动登录或点验证码。
+AdSense 审核要求至少 20-30 篇原创文章（600+ 字），当前只有工具页没有博客内容，需要先补。
 
-### 2. Cloudflare 登录验证
+### 2. 域名年龄
 
-可能需要用户确认登录状态。
+建议域名满 6 个月后再申请 AdSense，新域名通过率较低。
 
-### 3. DNS 生效时间
+### 3. 内容质量
 
-域名绑定后可能需要等待解析生效。
-
-### 4. 广告申请
-
-当前可以上线，但不建议马上申请广告。建议先补更多内容和收录。
+工具页功能完整，但缺少长文本 SEO 内容，后续需要为每个工具页补充引导文章。
 
 ## 当前结论
 
-项目已经具备上线最小版本条件。
+项目已完成第一阶段上线，工具页从 20 扩展到 30。
 
-建议先发布到 Cloudflare Pages，再继续扩展页面和内容。
+下一步重点是 SEO 内容建设和流量获取，不急着申请广告。
