@@ -100,25 +100,43 @@ baiyeyun.xyz
 6. DnD Character Names Guide
 7. How to Name Your Etsy Shop
 
-## 当前状态（2026-06-17）
+### 阶段 13：工具页扩展 Batch 4 + 博客（2026-06-18）
+
+新增 5 个工具页（50→55）+ 5 篇博客（17→22）：
+
+工具：
+1. Anime Name Generator (Gaming)
+2. Valorant Name Generator (Gaming)
+3. Agency Name Generator (Business)
+4. Studio Name Generator (Business)
+5. Barbershop Name Generator (Business)
+
+博客：
+1. Anime Character Name Ideas
+2. Valorant Name Ideas
+3. How to Name Your Agency
+4. Studio Name Ideas
+5. Barbershop Name Ideas
+
+## 当前状态（2026-06-19）
 
 - 正式站 https://baiyeyun.xyz/ 正常运行
-- 50 个工具页全部上线
-- 17 篇 SEO 博客文章
+- 55 个工具页全部上线
+- 22 篇 SEO 博客文章
 - Google Search Console 已验证 + sitemap 已提交
 - Cloudflare Web Analytics 已启用
-- 总计 67+ 个可索引页面
+- 总计 84+ 个可索引页面
 
 ## 工具页分类
 
 | 分类 | 数量 |
 |------|------|
 | Creator | 10 |
-| Business | 14 |
+| Business | 17 |
 | Pets | 3 |
-| Gaming | 13 |
+| Gaming | 15 |
 | Fun | 5 |
-| **总计** | **50** |
+| **总计** | **55** |
 
 ## 下一步
 
@@ -130,6 +148,6 @@ baiyeyun.xyz
 
 ## 风险记录
 
-1. AdSense 审核需要 20-30 篇原创文章（当前 17 篇，还需 3-13 篇）
+1. AdSense 审核需要 20-30 篇原创文章（当前 22 篇，还需 8 篇达到 30）
 2. 域名年龄建议满 6 个月
 3. 需要一些自然搜索流量才能通过 AdSense

@@ -14,11 +14,11 @@
 - [x] GitHub 仓库创建与上传
 - [x] Cloudflare Pages 发布
 - [x] 自定义域名绑定验证
-- [x] 工具页扩展至 50 个
-- [x] SEO 博客文章 17 篇
+- [x] 工具页扩展至 55 个
+- [x] SEO 博客文章 22 篇
 - [x] Google Search Console 验证 + sitemap 提交
 - [x] Cloudflare Web Analytics 启用
-- [ ] 更多博客文章（目标 30+ 篇）
+- [ ] 更多博客文章（目标 30+ 篇，当前 22）
 - [ ] AdSense 申请（域名满 6 个月后）
 
 ## 技术栈
@@ -54,11 +54,11 @@
 │   ├── index.html                # 工具总页
 │   ├── business-name-generator.html
 │   ├── youtube-name-generator.html
-│   └── ... (50 个工具页)
+│   └── ... (55 个工具页)
 ├── blog/
 │   ├── index.html                # 博客索引
 │   ├── how-to-choose-a-business-name.html
-│   └── ... (17 篇博客)
+│   └── ... (22 篇博客)
 ├── assets/
 │   ├── styles.css
 │   └── app.js
@@ -72,24 +72,24 @@
 └── _headers
 ```
 
-## 50 个工具页完整列表
+## 55 个工具页完整列表
 
 ### Creator（10 个）
 YouTube / TikTok / Instagram / Discord / Podcast / Blog / Band / Twitch / Twitter / Email Newsletter
 
-### Business（14 个）
-Business / Brand / Shop / Bakery / Clothing Brand / Etsy Shop / Restaurant / Coffee Shop / Photography Business / Hair Salon / Startup / Gym / Real Estate / Cleaning Business / Law Firm / Spa / Food Truck
+### Business（17 个）
+Business / Brand / Shop / Bakery / Clothing Brand / Etsy Shop / Restaurant / Coffee Shop / Photography Business / Hair Salon / Startup / Gym / Real Estate / Cleaning Business / Law Firm / Spa / Food Truck / Agency / Studio / Barbershop
 
 ### Pets（3 个）
 Pet / Cat / Dog
 
-### Gaming（13 个）
-Gamer Tag / Fantasy / DnD / Guild / Team / Dragon / Minecraft / Clan / Superhero / Pirate / Elf / Witch / Robot / Fantasy Town / Wizard
+### Gaming（15 个）
+Gamer Tag / Fantasy / DnD / Guild / Team / Dragon / Minecraft / Clan / Superhero / Pirate / Elf / Witch / Robot / Fantasy Town / Wizard / Anime / Valorant
 
 ### Fun（5 个）
 WiFi / Baby / Boat / Nickname / Couple
 
-## 17 篇博客文章
+## 22 篇博客文章
 
 1. How to Choose a Business Name
 2. 50 Best YouTube Channel Name Ideas
@@ -108,6 +108,11 @@ WiFi / Baby / Boat / Nickname / Couple
 15. Etsy Shop Name Ideas
 16. DnD Character Names Guide
 17. How to Name Your Etsy Shop
+18. Anime Character Name Ideas
+19. Valorant Name Ideas
+20. How to Name Your Agency
+21. Studio Name Ideas
+22. Barbershop Name Ideas
 
 ## 工具页模板结构
 
@@ -150,7 +155,7 @@ WiFi / Baby / Boat / Nickname / Couple
 
 ### 博客文章扩展方向
 - 每个工具页配一篇 800+ 字的 SEO 文章
-- 目标：30+ 篇（AdSense 审核要求）
+- 目标：30+ 篇（AdSense 审核要求，当前 22）
 - 长尾关键词覆盖
 - 内部链接网络
 

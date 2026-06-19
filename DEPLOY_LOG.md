@@ -40,13 +40,20 @@ git push origin main
 - 更新 tools/index.html, sitemap.xml, 首页
 - Commit: `18e5832`
 
+### Batch 5：工具扩展 Batch 4 + 博客
+
+- 新增 5 个工具页（50→55）
+- 新增 5 篇博客文章（17→22）
+- 更新 tools/index.html, blog/index.html, sitemap.xml, 首页
+- Commit: `da0f3a0`
+
 ## 验证结果
 
 所有页面已验证 200 OK：
 
-- 50 个工具页全部正常
-- 17 篇博客文章全部正常
-- 首页显示 "50 ready-to-use generators"
+- 55 个工具页全部正常
+- 22 篇博客文章全部正常
+- 首页显示 "55 ready-to-use generators"
 - 工具总页显示所有分类
 - sitemap.xml 包含所有 URL
 - Google Search Console 验证通过
@@ -54,10 +61,10 @@ git push origin main
 
 ## 当前页面总数
 
-- 50 个工具页
-- 17 篇博客文章
+- 55 个工具页
+- 22 篇博客文章
 - 1 个博客索引页
 - 1 个工具索引页
 - 5 个基础页面（首页, About, Contact, Privacy, Terms）
 - 1 个 404 页面
-- **总计：75 个 HTML 页面**
+- **总计：84 个 HTML 页面**
