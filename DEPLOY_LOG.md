@@ -58,9 +58,9 @@ git push origin main
 
 所有页面已验证 200 OK：
 
-- 60 个工具页全部正常
-- 30 篇博客文章全部正常
-- 首页显示 "60 ready-to-use generators"
+- 78 个工具页全部正常
+- 43 篇博客文章全部正常
+- 首页显示 "78 ready-to-use generators"
 - 工具总页显示所有分类
 - sitemap.xml 包含所有 URL
 - Google Search Console 验证通过
@@ -68,10 +68,10 @@ git push origin main
 
 ## 当前页面总数
 
-- 60 个工具页
-- 30 篇博客文章
+- 78 个工具页
+- 43 篇博客文章
 - 1 个博客索引页
 - 1 个工具索引页
 - 5 个基础页面（首页, About, Contact, Privacy, Terms）
 - 1 个 404 页面
-- **总计：95 个 HTML 页面**
+- **总计：126 个 HTML 页面**

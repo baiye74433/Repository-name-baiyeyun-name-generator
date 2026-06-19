@@ -142,22 +142,22 @@ baiyeyun.xyz
 ## 当前状态（2026-06-19）
 
 - 正式站 https://baiyeyun.xyz/ 正常运行
-- 60 个工具页全部上线
-- 30 篇 SEO 博客文章
+- 78 个工具页全部上线
+- 43 篇 SEO 博客文章
 - Google Search Console 已验证 + sitemap 已提交
 - Cloudflare Web Analytics 已启用
-- 总计 95+ 个可索引页面
+- 总计 126+ 个可索引页面
 
 ## 工具页分类
 
 | 分类 | 数量 |
 |------|------|
 | Creator | 10 |
-| Business | 19 |
+| Business | 37 |
 | Pets | 3 |
 | Gaming | 18 |
 | Fun | 5 |
-| **总计** | **60** |
+| **总计** | **78** |
 
 ## 下一步
 

@@ -14,11 +14,11 @@
 - [x] GitHub 仓库创建与上传
 - [x] Cloudflare Pages 发布
 - [x] 自定义域名绑定验证
-- [x] 工具页扩展至 60 个
-- [x] SEO 博客文章 30 篇
+- [x] 工具页扩展至 78 个
+- [x] SEO 博客文章 43 篇
 - [x] Google Search Console 验证 + sitemap 提交
 - [x] Cloudflare Web Analytics 启用
-- [x] 更多博客文章（目标 30+ 篇，当前 30）
+- [x] 更多博客文章（目标 30+ 篇，当前 43）
 - [ ] AdSense 申请（域名满 6 个月后）
 
 ## 技术栈
@@ -54,11 +54,11 @@
 │   ├── index.html                # 工具总页
 │   ├── business-name-generator.html
 │   ├── youtube-name-generator.html
-│   └── ... (60 个工具页)
+│   └── ... (78 个工具页)
 ├── blog/
 │   ├── index.html                # 博客索引
 │   ├── how-to-choose-a-business-name.html
-│   └── ... (30 篇博客)
+│   └── ... (43 篇博客)
 ├── assets/
 │   ├── styles.css
 │   └── app.js
@@ -72,13 +72,13 @@
 └── _headers
 ```
 
-## 60 个工具页完整列表
+## 78 个工具页完整列表
 
 ### Creator（10 个）
 YouTube / TikTok / Instagram / Discord / Podcast / Blog / Band / Twitch / Twitter / Email Newsletter
 
-### Business（19 个）
-Business / Brand / Shop / Bakery / Clothing Brand / Etsy Shop / Restaurant / Coffee Shop / Photography Business / Hair Salon / Startup / Gym / Real Estate / Cleaning Business / Law Firm / Spa / Food Truck / Agency / Studio / Barbershop / Bar / Tattoo Shop
+### Business（37 个）
+Business / Brand / Shop / Bakery / Clothing Brand / Etsy Shop / Restaurant / Coffee Shop / Photography Business / Hair Salon / Startup / Gym / Real Estate / Cleaning Business / Law Firm / Spa / Food Truck / Agency / Studio / Barbershop / Bar / Tattoo Shop / Nail Salon / Plumbing / Landscaping / Interior Design / Event Planning / Roofing / HVAC / Painting / Moving Company / Pressure Washing / Electrical / Garage Door / Window Cleaning / Pest Control / Junk Removal / Tree Service / Concrete / Pool Cleaning
 
 ### Pets（3 个）
 Pet / Cat / Dog
@@ -89,7 +89,7 @@ Gamer Tag / Fantasy / DnD / Guild / Team / Dragon / Minecraft / Clan / Superhero
 ### Fun（5 个）
 WiFi / Baby / Boat / Nickname / Couple
 
-## 30 篇博客文章
+## 43 篇博客文章
 
 1. How to Choose a Business Name
 2. 50 Best YouTube Channel Name Ideas
@@ -121,6 +121,19 @@ WiFi / Baby / Boat / Nickname / Couple
 28. Pokemon Team Name Ideas
 29. Speakeasy Bar Name Ideas
 30. Fine Line Tattoo Studio Name Ideas
+31. Roofing Business Name Ideas
+32. HVAC Business Name Ideas
+33. Painting Business Name Ideas
+34. Moving Company Name Ideas
+35. Pressure Washing Business Name Ideas
+36. Electrical Business Name Ideas
+37. Garage Door Business Name Ideas
+38. Window Cleaning Business Name Ideas
+39. Pest Control Business Name Ideas
+40. Junk Removal Business Name Ideas
+41. Tree Service Name Ideas
+42. Concrete Business Name Ideas
+43. Pool Cleaning Business Name Ideas
 
 ## 工具页模板结构
 
@@ -163,7 +176,7 @@ WiFi / Baby / Boat / Nickname / Couple
 
 ### 博客文章扩展方向
 - 每个工具页配一篇 800+ 字的 SEO 文章
-- 目标：30+ 篇（AdSense 审核要求，当前 30）
+- 目标：30+ 篇（AdSense 审核要求，当前 43）
 - 长尾关键词覆盖
 - 内部链接网络
 
