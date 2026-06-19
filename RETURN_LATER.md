@@ -13,15 +13,15 @@ If you come back to this project after a long break, do this first:
 ## Current Status (2026-06-19)
 
 - Site live at https://baiyeyun.xyz/
-- 55 tool pages across 6 categories
-- 22 SEO blog articles
+- 60 tool pages across 6 categories
+- 30 SEO blog articles
 - Google Search Console verified + sitemap submitted
 - Cloudflare Web Analytics enabled
 - GitHub auto-deploys to Cloudflare Pages on push to main
 
 ## What Works
 
-- All 55 tool pages load and function correctly
+- All 60 tool pages load and function correctly
 - Name generator (keyword + tone → results) works
 - Shuffle, Copy, Save, Shortlist all functional
 - Blog articles have internal links to tool pages
@@ -30,8 +30,8 @@ If you come back to this project after a long break, do this first:
 
 ## What Needs Work
 
-- More blog articles (target 30+ for AdSense, currently at 22)
-- More tool pages (can keep expanding beyond 55)
+- More blog articles (30+ reached, keep expanding from 30)
+- More tool pages (can keep expanding beyond 60)
 - No AdSense yet (wait for domain age + more content)
 - No backlinks strategy yet
 - No social media presence

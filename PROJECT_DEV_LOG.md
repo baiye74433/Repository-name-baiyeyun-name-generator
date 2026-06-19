@@ -118,25 +118,46 @@ baiyeyun.xyz
 4. Studio Name Ideas
 5. Barbershop Name Ideas
 
+### 阶段 14：工具页扩展 Batch 5 + 内容冲刺（2026-06-19）
+
+新增 5 个工具页（55→60）+ 8 篇博客（22→30）：
+
+工具：
+1. Pokemon Name Generator (Gaming)
+2. Fortnite Name Generator (Gaming)
+3. League of Legends Name Generator (Gaming)
+4. Bar Name Generator (Business)
+5. Tattoo Shop Name Generator (Business)
+
+博客：
+1. Pokemon Name Ideas
+2. Fortnite Name Ideas
+3. League of Legends Name Ideas
+4. Bar Name Ideas
+5. Tattoo Shop Name Ideas
+6. Pokemon Team Name Ideas
+7. Speakeasy Bar Name Ideas
+8. Fine Line Tattoo Studio Name Ideas
+
 ## 当前状态（2026-06-19）
 
 - 正式站 https://baiyeyun.xyz/ 正常运行
-- 55 个工具页全部上线
-- 22 篇 SEO 博客文章
+- 60 个工具页全部上线
+- 30 篇 SEO 博客文章
 - Google Search Console 已验证 + sitemap 已提交
 - Cloudflare Web Analytics 已启用
-- 总计 84+ 个可索引页面
+- 总计 95+ 个可索引页面
 
 ## 工具页分类
 
 | 分类 | 数量 |
 |------|------|
 | Creator | 10 |
-| Business | 17 |
+| Business | 19 |
 | Pets | 3 |
-| Gaming | 15 |
+| Gaming | 18 |
 | Fun | 5 |
-| **总计** | **55** |
+| **总计** | **60** |
 
 ## 下一步
 
@@ -148,6 +169,6 @@ baiyeyun.xyz
 
 ## 风险记录
 
-1. AdSense 审核需要 20-30 篇原创文章（当前 22 篇，还需 8 篇达到 30）
+1. AdSense 审核内容量门槛已达到（当前 30 篇），后续重点转向持续更新与流量积累
 2. 域名年龄建议满 6 个月
 3. 需要一些自然搜索流量才能通过 AdSense
