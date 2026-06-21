@@ -53,6 +53,9 @@ const sitemap = read("sitemap.xml");
 const sitemapUrls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
 const sitemapSet = new Set(sitemapUrls);
 if (sitemapUrls.length !== sitemapSet.size) issues.push("Sitemap has duplicate URLs");
+for (const url of sitemapUrls) {
+  if (url.endsWith(".html")) issues.push(`Sitemap URL still has .html: ${url}`);
+}
 
 for (const file of tools) {
   const publicPath = publicPathFromFile(`tools/${file}`);
@@ -76,6 +79,8 @@ for (const file of allHtml) {
   if (!desc) issues.push(`Missing meta description: ${file}`);
   if (text.length < 900 && !["404.html"].includes(file)) issues.push(`Thin page text: ${file} (${text.length} chars)`);
   if (/lorem ipsum|coming soon|under construction|todo|placeholder/i.test(text)) issues.push(`Placeholder-like text: ${file}`);
+  const absoluteHtmlUrls = [...html.matchAll(/https:\/\/baiyeyun\.xyz\/[^"'<\s]*?\.html/g)].map((match) => match[0]);
+  if (absoluteHtmlUrls.length) issues.push(`Absolute .html URL in ${file}: ${absoluteHtmlUrls[0]}`);
 
   const hrefs = [...html.matchAll(/href="([^"]+)"/g)].map((match) => match[1]);
   for (const href of hrefs) {

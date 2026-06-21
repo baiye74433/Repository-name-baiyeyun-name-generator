@@ -172,3 +172,12 @@ baiyeyun.xyz
 1. AdSense 审核内容量门槛已达到（当前 30 篇），后续重点转向持续更新与流量积累
 2. 域名年龄建议满 6 个月
 3. 需要一些自然搜索流量才能通过 AdSense
+
+## 2026-06-21 AdSense Readiness Notes
+
+- Current real counts: 78 tools, 43 blog articles, 129 HTML pages, 128 sitemap URLs.
+- `node .\audit-adsense-readiness.js` returns `issues: []`.
+- Live sitemap check passed: 128 URLs, 0 `.html` URLs, 0 bad URLs.
+- Public URL signals are now extensionless across canonical, Open Graph URL, structured data, and sitemap.
+- `404.html` now has a fuller meta description.
+- Do not add `ads.txt` until Google AdSense provides the real publisher ID.

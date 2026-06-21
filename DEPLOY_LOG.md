@@ -75,3 +75,11 @@ git push origin main
 - 5 个基础页面（首页, About, Contact, Privacy, Terms）
 - 1 个 404 页面
 - **总计：126 个 HTML 页面**
+
+## 2026-06-21 AdSense readiness cleanup
+
+- Added a longer meta description to `404.html`.
+- Normalized absolute `.html` URLs inside structured data and other absolute URL fields.
+- Extended `audit-adsense-readiness.js` to catch future sitemap or absolute `.html` URL regressions.
+- Verified local audit: 78 tools, 43 blogs, 129 HTML pages, 128 sitemap URLs, `issues: []`.
+- Verified live sitemap: 128 URLs, 0 `.html` URLs, 0 bad URLs.

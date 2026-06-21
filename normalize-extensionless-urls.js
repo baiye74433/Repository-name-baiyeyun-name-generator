@@ -39,6 +39,7 @@ for (const file of htmlFiles) {
   let html = fs.readFileSync(fullPath, "utf8");
   html = html.replace(/href="(\/[^"#?]*?\.html)([#?][^"]*)?"/g, (_match, url, suffix = "") => `href="${normalizePathUrl(url)}${suffix}"`);
   html = html.replace(/href="https:\/\/baiyeyun\.xyz\/([^"#?]*?\.html)([#?][^"]*)?"/g, (_match, url, suffix = "") => `href="${normalizeAbsoluteUrl(`${domain}/${url}`)}${suffix}"`);
+  html = html.replace(/https:\/\/baiyeyun\.xyz\/[^"' <>\n]*?\.html/g, (url) => normalizeAbsoluteUrl(url));
   html = html.replace(/<link rel="canonical" href="[^"]*"/, `<link rel="canonical" href="${domain}${canonicalPath(file)}"`);
   html = html.replace(/<meta property="og:url" content="[^"]*"/, `<meta property="og:url" content="${domain}${canonicalPath(file)}"`);
   fs.writeFileSync(fullPath, html, "utf8");

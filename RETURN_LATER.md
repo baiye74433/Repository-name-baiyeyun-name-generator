@@ -79,3 +79,12 @@ Set Expiration to "No expiration" to avoid repeated token issues.
 - Cloudflare Pages: https://repository-name-baiyeyun-name-generator.pages.dev/
 - Google Search Console: https://search.google.com/search-console
 - Cloudflare Dashboard: https://dash.cloudflare.com/
+
+## 2026-06-21 AdSense Readiness Notes
+
+- Current real counts: 78 tools, 43 blog articles, 129 HTML pages, 128 sitemap URLs.
+- `node .\audit-adsense-readiness.js` returns `issues: []`.
+- Live sitemap check passed: 128 URLs, 0 `.html` URLs, 0 bad URLs.
+- Public URL signals are now extensionless across canonical, Open Graph URL, structured data, and sitemap.
+- Do not add `ads.txt` until Google AdSense provides the real publisher ID.
+- Avoid mass-adding new pages before AdSense review; keep the site stable, clean, and internally consistent.
