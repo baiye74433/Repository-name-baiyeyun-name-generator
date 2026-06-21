@@ -9,6 +9,25 @@
 - 部署方式：GitHub `main` → Cloudflare Pages 自动部署
 - 站点类型：静态 HTML / CSS / 原生 JavaScript
 
+## 最近一次硬检查（2026-06-21）
+
+- 已运行 `node audit-adsense-readiness.js`
+- 工具页：78
+- 博客文章：43
+- sitemap URL：128
+- 死链：0
+- 重复 title / description：0
+- sitemap / 工具索引 / 博客索引漏页：0
+- 基础页薄内容问题：已修复
+
+## 可重复运行的检查命令
+
+```bash
+node audit-adsense-readiness.js
+```
+
+如果输出里的 `issues` 是空数组，说明当前硬性结构检查通过。
+
 ## 申请前必须确认
 
 ### 1. 基础页面完整
