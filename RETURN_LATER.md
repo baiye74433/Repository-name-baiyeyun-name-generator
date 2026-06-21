@@ -86,5 +86,6 @@ Set Expiration to "No expiration" to avoid repeated token issues.
 - `node .\audit-adsense-readiness.js` returns `issues: []`.
 - Live sitemap check passed: 128 URLs, 0 `.html` URLs, 0 bad URLs.
 - Public URL signals are now extensionless across canonical, Open Graph URL, structured data, and sitemap.
+- Older blog Open Graph metadata has been normalized; canonical and `og:url` now match across all 129 HTML pages.
 - Do not add `ads.txt` until Google AdSense provides the real publisher ID.
 - Avoid mass-adding new pages before AdSense review; keep the site stable, clean, and internally consistent.

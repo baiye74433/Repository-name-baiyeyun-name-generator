@@ -211,6 +211,7 @@ WiFi / Baby / Boat / Nickname / Couple
 - `node .\audit-adsense-readiness.js` returns `issues: []`.
 - Live sitemap check passed: 128 URLs, 0 `.html` URLs, 0 bad URLs.
 - Public URL signals are now extensionless across canonical, Open Graph URL, structured data, and sitemap.
+- Older blog Open Graph metadata has been normalized; canonical and `og:url` now match across all 129 HTML pages.
 - All blog articles are 500+ words.
 - Add `ads.txt` only after Google AdSense provides the real publisher ID.
 - Recommended next step: keep the site stable for review, then add a small number of high-intent tools/blogs after the readiness pass.

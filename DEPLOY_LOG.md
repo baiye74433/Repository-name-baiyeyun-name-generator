@@ -83,3 +83,10 @@ git push origin main
 - Extended `audit-adsense-readiness.js` to catch future sitemap or absolute `.html` URL regressions.
 - Verified local audit: 78 tools, 43 blogs, 129 HTML pages, 128 sitemap URLs, `issues: []`.
 - Verified live sitemap: 128 URLs, 0 `.html` URLs, 0 bad URLs.
+
+## 2026-06-21 Blog Open Graph cleanup
+
+- Added missing `og:description`, `og:url`, and `twitter:card` metadata to 16 older blog articles.
+- Extended `audit-adsense-readiness.js` to validate canonical URL, Open Graph URL, H1 count, and unexpected `noindex`.
+- Verified local audit again: 78 tools, 43 blogs, 129 HTML pages, 128 sitemap URLs, `issues: []`.
+- Verified all 129 HTML pages have matching canonical and Open Graph URLs.

@@ -74,9 +74,17 @@ for (const file of allHtml) {
   const html = read(file);
   const title = (html.match(/<title>(.*?)<\/title>/i) || [])[1] || "";
   const desc = (html.match(/<meta name="description" content="([^"]*)"/i) || [])[1] || "";
+  const expectedUrl = `${domain}${publicPathFromFile(file)}`;
+  const canonical = (html.match(/<link\s+rel=["']canonical["']\s+href=["']([^"']*)/i) || [])[1] || "";
+  const ogUrl = (html.match(/<meta\s+property=["']og:url["']\s+content=["']([^"']*)/i) || [])[1] || "";
+  const h1Count = [...html.matchAll(/<h1[\s>]/gi)].length;
   const text = stripTags(html);
   if (!title) issues.push(`Missing title: ${file}`);
   if (!desc) issues.push(`Missing meta description: ${file}`);
+  if (canonical !== expectedUrl) issues.push(`Canonical mismatch in ${file}: ${canonical}`);
+  if (ogUrl !== expectedUrl) issues.push(`OG URL mismatch in ${file}: ${ogUrl}`);
+  if (h1Count !== 1) issues.push(`H1 count ${h1Count}: ${file}`);
+  if (/<meta\s+name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html) && file !== "404.html") issues.push(`Unexpected noindex: ${file}`);
   if (text.length < 900 && !["404.html"].includes(file)) issues.push(`Thin page text: ${file} (${text.length} chars)`);
   if (/lorem ipsum|coming soon|under construction|todo|placeholder/i.test(text)) issues.push(`Placeholder-like text: ${file}`);
   const absoluteHtmlUrls = [...html.matchAll(/https:\/\/baiyeyun\.xyz\/[^"'<\s]*?\.html/g)].map((match) => match[0]);
