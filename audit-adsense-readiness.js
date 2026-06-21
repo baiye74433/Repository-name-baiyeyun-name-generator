@@ -22,7 +22,17 @@ function localPathFromHref(href) {
   const clean = href.split("#")[0].split("?")[0];
   if (!clean || clean.startsWith("http") || clean.startsWith("mailto:") || clean.startsWith("tel:")) return null;
   if (clean === "/") return "index.html";
-  return clean.replace(/^\//, "").replace(/\/$/, "/index.html");
+  if (clean.endsWith("/")) return clean.replace(/^\//, "") + "index.html";
+  const local = clean.replace(/^\//, "");
+  if (path.extname(local)) return local;
+  return `${local}.html`;
+}
+
+function publicPathFromFile(file) {
+  if (file === "index.html") return "/";
+  if (file === "tools/index.html") return "/tools/";
+  if (file === "blog/index.html") return "/blog/";
+  return `/${file.replace(/\.html$/, "")}`;
 }
 
 const tools = listHtml("tools").filter((file) => file !== "index.html");
@@ -45,14 +55,16 @@ const sitemapSet = new Set(sitemapUrls);
 if (sitemapUrls.length !== sitemapSet.size) issues.push("Sitemap has duplicate URLs");
 
 for (const file of tools) {
-  const url = `${domain}/tools/${file}`;
+  const publicPath = publicPathFromFile(`tools/${file}`);
+  const url = `${domain}${publicPath}`;
   if (!sitemapSet.has(url)) issues.push(`Tool missing from sitemap: ${file}`);
-  if (!read("tools/index.html").includes(`/tools/${file}`)) issues.push(`Tool missing from tools index: ${file}`);
+  if (!read("tools/index.html").includes(publicPath)) issues.push(`Tool missing from tools index: ${file}`);
 }
 for (const file of blogs) {
-  const url = `${domain}/blog/${file}`;
+  const publicPath = publicPathFromFile(`blog/${file}`);
+  const url = `${domain}${publicPath}`;
   if (!sitemapSet.has(url)) issues.push(`Blog missing from sitemap: ${file}`);
-  if (!read("blog/index.html").includes(`/blog/${file}`)) issues.push(`Blog missing from blog index: ${file}`);
+  if (!read("blog/index.html").includes(publicPath)) issues.push(`Blog missing from blog index: ${file}`);
 }
 
 for (const file of allHtml) {
