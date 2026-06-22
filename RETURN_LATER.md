@@ -112,3 +112,12 @@ Set Expiration to "No expiration" to avoid repeated token issues.
 5. Keep the site stable for 3-7 days before applying to AdSense.
 
 Do not add more bulk pages or `ads.txt` before the Search Console status is checked.
+
+## 2026-06-22 Google Verification DNS Status
+
+- Google Search Console domain verification TXT record has been added to Cloudflare DNS.
+- TXT value:
+  - `google-site-verification=AzkGHwqJWZFXcBGx0ia6Vni7a-s9DYUTBmFWa3MBb9g`
+- Public DNS verification passed on both `1.1.1.1` and `8.8.8.8`.
+- If Search Console asks for verification again, click verify after DNS propagation.
+- If the in-app browser Google login gets stuck, use a normal browser for Search Console.

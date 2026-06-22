@@ -110,3 +110,13 @@ git push origin main
 - Saved the current AdSense readiness status and next action plan into project handoff docs.
 - Local audit still passes: 78 tools, 43 blogs, 129 HTML pages, 128 sitemap URLs, `issues: []`.
 - Next manual platform task: re-submit sitemap in Google Search Console and inspect indexing coverage.
+
+## 2026-06-22 Google Domain Verification DNS
+
+- Used the Cloudflare / Google Domain Connect authorization flow for `baiyeyun.xyz`.
+- Cloudflare added the Google Search Console verification TXT record:
+  - `google-site-verification=AzkGHwqJWZFXcBGx0ia6Vni7a-s9DYUTBmFWa3MBb9g`
+- Verified TXT propagation through public resolvers:
+  - `1.1.1.1` returns the TXT record.
+  - `8.8.8.8` returns the TXT record.
+- Google login inside the in-app browser can still stall on the identifier page, so use a normal browser if the Search Console UI is needed.

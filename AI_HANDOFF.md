@@ -255,3 +255,11 @@ Expected result:
 4. Wait 3-7 stable days before AdSense application.
 
 Do not add `ads.txt` until AdSense gives the real publisher ID.
+
+## 2026-06-22 Google Verification DNS Status
+
+- Cloudflare / Google Domain Connect authorization was completed.
+- Cloudflare DNS now contains the Google Search Console verification TXT record:
+  - `google-site-verification=AzkGHwqJWZFXcBGx0ia6Vni7a-s9DYUTBmFWa3MBb9g`
+- Public DNS confirms the record through both Cloudflare DNS (`1.1.1.1`) and Google DNS (`8.8.8.8`).
+- Next Search Console action: open Search Console in a normal browser if the in-app Google login stalls, click Verify if needed, then re-submit `https://baiyeyun.xyz/sitemap.xml`.
