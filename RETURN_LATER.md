@@ -121,3 +121,16 @@ Do not add more bulk pages or `ads.txt` before the Search Console status is chec
 - Public DNS verification passed on both `1.1.1.1` and `8.8.8.8`.
 - If Search Console asks for verification again, click verify after DNS propagation.
 - If the in-app browser Google login gets stuck, use a normal browser for Search Console.
+
+## 2026-06-22 Search Console Sitemap Status
+
+- Sitemap was submitted successfully in Google Search Console.
+- Submitted URL:
+  - `https://baiyeyun.xyz/sitemap.xml`
+- Search Console confirmation: `Sitemap submitted successfully`.
+- Next time, check Search Console for:
+  - sitemap read status
+  - indexed pages
+  - not indexed pages
+  - 404 or redirect warnings
+  - crawled but not indexed / discovered but not indexed

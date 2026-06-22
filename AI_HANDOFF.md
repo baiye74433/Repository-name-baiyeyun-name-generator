@@ -263,3 +263,11 @@ Do not add `ads.txt` until AdSense gives the real publisher ID.
   - `google-site-verification=AzkGHwqJWZFXcBGx0ia6Vni7a-s9DYUTBmFWa3MBb9g`
 - Public DNS confirms the record through both Cloudflare DNS (`1.1.1.1`) and Google DNS (`8.8.8.8`).
 - Next Search Console action: open Search Console in a normal browser if the in-app Google login stalls, click Verify if needed, then re-submit `https://baiyeyun.xyz/sitemap.xml`.
+
+## 2026-06-22 Search Console Sitemap Submitted
+
+- Google Search Console accepted the sitemap submission.
+- Submitted:
+  - `https://baiyeyun.xyz/sitemap.xml`
+- UI confirmation observed: `Sitemap submitted successfully`.
+- Keep the site stable for 3-7 days, then review indexing coverage before applying to AdSense.

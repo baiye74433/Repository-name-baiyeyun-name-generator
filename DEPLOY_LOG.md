@@ -120,3 +120,12 @@ git push origin main
   - `1.1.1.1` returns the TXT record.
   - `8.8.8.8` returns the TXT record.
 - Google login inside the in-app browser can still stall on the identifier page, so use a normal browser if the Search Console UI is needed.
+
+## 2026-06-22 Search Console Sitemap Submitted
+
+- Google Search Console sitemap submission completed successfully.
+- Submitted sitemap URL:
+  - `https://baiyeyun.xyz/sitemap.xml`
+- Search Console showed: `Sitemap submitted successfully`.
+- Local audit after submission still passes: 78 tools, 43 blogs, 129 HTML pages, 128 sitemap URLs, `issues: []`.
+- Next step: wait for Google processing, then check indexing coverage and sitemap status in Search Console.
