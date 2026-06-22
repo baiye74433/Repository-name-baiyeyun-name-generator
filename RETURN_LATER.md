@@ -89,3 +89,26 @@ Set Expiration to "No expiration" to avoid repeated token issues.
 - Older blog Open Graph metadata has been normalized; canonical and `og:url` now match across all 129 HTML pages.
 - Do not add `ads.txt` until Google AdSense provides the real publisher ID.
 - Avoid mass-adding new pages before AdSense review; keep the site stable, clean, and internally consistent.
+
+## 2026-06-22 Next Session Plan
+
+- Cloudflare canonical domain setup is complete.
+- `www.baiyeyun.xyz` is a proxied CNAME pointing to `baiyeyun.xyz`.
+- Dynamic redirect rules send both `https://www.baiyeyun.xyz/*` and `http://www.baiyeyun.xyz/*` to `https://baiyeyun.xyz/*` with 301 redirects.
+- Verified redirects:
+  - `https://baiyeyun.xyz/` -> 200
+  - `http://baiyeyun.xyz/` -> 301 to `https://baiyeyun.xyz/`
+  - `https://www.baiyeyun.xyz/` -> 301 to `https://baiyeyun.xyz/`
+  - `http://www.baiyeyun.xyz/` -> 301 to `https://baiyeyun.xyz/`
+  - `https://www.baiyeyun.xyz/tools/business-name-generator` -> 301 to `https://baiyeyun.xyz/tools/business-name-generator`
+- Local AdSense audit still passes: 78 tools, 43 blogs, 129 HTML pages, 128 sitemap URLs, `issues: []`.
+
+### Recommended next action
+
+1. Open Google Search Console: https://search.google.com/search-console
+2. Select property: `https://baiyeyun.xyz/`
+3. Submit sitemap again: `https://baiyeyun.xyz/sitemap.xml`
+4. Check sitemap status, indexed pages, not indexed pages, 404 errors, redirect warnings, and crawl warnings.
+5. Keep the site stable for 3-7 days before applying to AdSense.
+
+Do not add more bulk pages or `ads.txt` before the Search Console status is checked.

@@ -1,5 +1,29 @@
 # SITE_QUALITY_CHECKLIST
 
+## 2026-06-22 Quality Save Point
+
+Current verified state:
+
+- 78 tool pages.
+- 43 blog articles.
+- 129 HTML pages.
+- 128 sitemap URLs.
+- Local audit returns `issues: []`.
+- Live canonical domain behavior is clean:
+  - HTTPS apex loads.
+  - HTTP redirects to HTTPS.
+  - `www` redirects to apex HTTPS.
+  - Redirects preserve paths.
+
+Next quality checks before AdSense:
+
+1. Re-submit sitemap in Google Search Console.
+2. Check indexed / not indexed pages.
+3. Check sitemap read status.
+4. Check 404 and redirect warnings.
+5. Do a light visual scan of the homepage, tools index, blog index, About, Contact, Privacy, and Terms after the next deployment.
+6. Avoid bulk content additions until Search Console is clean enough.
+
 项目：`baiyeyun.xyz`
 
 ## 用途

@@ -90,3 +90,23 @@ git push origin main
 - Extended `audit-adsense-readiness.js` to validate canonical URL, Open Graph URL, H1 count, and unexpected `noindex`.
 - Verified local audit again: 78 tools, 43 blogs, 129 HTML pages, 128 sitemap URLs, `issues: []`.
 - Verified all 129 HTML pages have matching canonical and Open Graph URLs.
+
+## 2026-06-22 Cloudflare Domain Normalization
+
+- Configured canonical domain behavior in Cloudflare.
+- `www.baiyeyun.xyz` now points to `baiyeyun.xyz` as a proxied CNAME.
+- Enabled 301 redirects from `www` to apex HTTPS:
+  - `https://www.baiyeyun.xyz/*` -> `https://baiyeyun.xyz/*`
+  - `http://www.baiyeyun.xyz/*` -> `https://baiyeyun.xyz/*`
+- Verified:
+  - `https://baiyeyun.xyz/` -> 200
+  - `http://baiyeyun.xyz/` -> 301 `https://baiyeyun.xyz/`
+  - `https://www.baiyeyun.xyz/` -> 301 `https://baiyeyun.xyz/`
+  - `http://www.baiyeyun.xyz/` -> 301 `https://baiyeyun.xyz/`
+  - `https://www.baiyeyun.xyz/tools/business-name-generator` -> 301 `https://baiyeyun.xyz/tools/business-name-generator`
+
+## 2026-06-22 Documentation Save Point
+
+- Saved the current AdSense readiness status and next action plan into project handoff docs.
+- Local audit still passes: 78 tools, 43 blogs, 129 HTML pages, 128 sitemap URLs, `issues: []`.
+- Next manual platform task: re-submit sitemap in Google Search Console and inspect indexing coverage.

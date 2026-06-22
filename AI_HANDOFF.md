@@ -215,3 +215,43 @@ WiFi / Baby / Boat / Nickname / Couple
 - All blog articles are 500+ words.
 - Add `ads.txt` only after Google AdSense provides the real publisher ID.
 - Recommended next step: keep the site stable for review, then add a small number of high-intent tools/blogs after the readiness pass.
+
+## 2026-06-22 Handoff Update
+
+- Current focus: AdSense readiness, Search Console cleanup, canonical domain stability.
+- Do not mass-add new tools or blogs right now.
+- Cloudflare setup completed:
+  - `www.baiyeyun.xyz` DNS exists as a proxied CNAME to `baiyeyun.xyz`.
+  - Dynamic redirect rules are enabled for both HTTP and HTTPS `www` traffic.
+  - All `www` traffic redirects to the apex domain `https://baiyeyun.xyz/`.
+- Verified redirect behavior:
+  - Apex HTTPS returns 200.
+  - Apex HTTP redirects to HTTPS.
+  - `www` HTTP and HTTPS redirect to apex HTTPS.
+  - Path redirects preserve the path.
+- Latest local audit command:
+
+```powershell
+node .\audit-adsense-readiness.js
+```
+
+Expected result:
+
+```json
+{
+  "tools": 78,
+  "blogs": 43,
+  "htmlPages": 129,
+  "sitemapUrls": 128,
+  "issues": []
+}
+```
+
+### Next step
+
+1. Re-submit `https://baiyeyun.xyz/sitemap.xml` in Google Search Console.
+2. Check index coverage and sitemap status.
+3. Fix only real GSC errors if any appear.
+4. Wait 3-7 stable days before AdSense application.
+
+Do not add `ads.txt` until AdSense gives the real publisher ID.

@@ -181,3 +181,31 @@ baiyeyun.xyz
 - Public URL signals are now extensionless across canonical, Open Graph URL, structured data, and sitemap.
 - `404.html` now has a fuller meta description.
 - Do not add `ads.txt` until Google AdSense provides the real publisher ID.
+
+## 2026-06-22 Cloudflare Canonical Domain + Next Plan
+
+- Completed Cloudflare domain normalization for `baiyeyun.xyz`.
+- Added/verified `www.baiyeyun.xyz` as a proxied CNAME pointing to `baiyeyun.xyz`.
+- Added/verified 301 redirect rules:
+  - `https://www.baiyeyun.xyz/*` -> `https://baiyeyun.xyz/*`
+  - `http://www.baiyeyun.xyz/*` -> `https://baiyeyun.xyz/*`
+- Verified live behavior:
+  - `https://baiyeyun.xyz/` returns 200.
+  - `http://baiyeyun.xyz/` redirects to HTTPS.
+  - `https://www.baiyeyun.xyz/` redirects to apex HTTPS.
+  - `http://www.baiyeyun.xyz/` redirects to apex HTTPS.
+  - Tool page paths are preserved during `www` redirects.
+- Ran local audit again:
+  - 78 tools
+  - 43 blog articles
+  - 129 HTML pages
+  - 128 sitemap URLs
+  - `issues: []`
+
+### Next plan
+
+1. Re-submit `https://baiyeyun.xyz/sitemap.xml` in Google Search Console.
+2. Check Search Console for page indexing, sitemap, 404, redirect, and crawl warnings.
+3. Keep the site stable for 3-7 days.
+4. Apply to AdSense only after Search Console shows clean enough indexing signals.
+5. After the readiness window, add only small batches of high-intent service tools and matching blogs.
