@@ -4,7 +4,7 @@ const path = require("path");
 
 const root = __dirname;
 const domain = "https://baiyeyun.xyz";
-const requiredFiles = ["index.html", "tools/index.html", "blog/index.html", "about.html", "contact.html", "privacy.html", "terms.html", "404.html", "robots.txt", "sitemap.xml"];
+const requiredFiles = ["index.html", "tools/index.html", "blog/index.html", "about.html", "contact.html", "privacy.html", "terms.html", "404.html", "robots.txt", "sitemap.xml", "sitemap.txt"];
 
 function read(file) {
   return fs.readFileSync(path.join(root, file), "utf8");
@@ -52,9 +52,17 @@ if (homeCount !== tools.length) issues.push(`Homepage count ${homeCount} does no
 const sitemap = read("sitemap.xml");
 const sitemapUrls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
 const sitemapSet = new Set(sitemapUrls);
+const textSitemapUrls = read("sitemap.txt").split(/\r?\n/).map((url) => url.trim()).filter(Boolean);
+const textSitemapSet = new Set(textSitemapUrls);
 if (sitemapUrls.length !== sitemapSet.size) issues.push("Sitemap has duplicate URLs");
+if (textSitemapUrls.length !== textSitemapSet.size) issues.push("Text sitemap has duplicate URLs");
+if (textSitemapUrls.length !== sitemapUrls.length) issues.push(`Text sitemap URL count ${textSitemapUrls.length} does not match XML sitemap ${sitemapUrls.length}`);
 for (const url of sitemapUrls) {
   if (url.endsWith(".html")) issues.push(`Sitemap URL still has .html: ${url}`);
+  if (!textSitemapSet.has(url)) issues.push(`URL missing from text sitemap: ${url}`);
+}
+for (const url of textSitemapUrls) {
+  if (!sitemapSet.has(url)) issues.push(`Text sitemap URL missing from XML sitemap: ${url}`);
 }
 
 for (const file of tools) {

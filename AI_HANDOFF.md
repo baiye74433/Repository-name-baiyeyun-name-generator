@@ -271,3 +271,12 @@ Do not add `ads.txt` until AdSense gives the real publisher ID.
   - `https://baiyeyun.xyz/sitemap.xml`
 - UI confirmation observed: `Sitemap submitted successfully`.
 - Keep the site stable for 3-7 days, then review indexing coverage before applying to AdSense.
+
+## 2026-06-30 Sitemap Fallback
+
+- Search Console showed `Couldn't fetch` for `https://baiyeyun.xyz/sitemap.xml`.
+- Independent checks confirm the XML sitemap is valid and reachable, including with a Googlebot user agent.
+- Added `sitemap.txt` as a plain-text fallback sitemap.
+- Updated `robots.txt` to include both XML and TXT sitemap URLs.
+- Updated `audit-adsense-readiness.js` so future audits fail if `sitemap.txt` and `sitemap.xml` diverge.
+- Next step: submit `https://baiyeyun.xyz/sitemap.txt` in Search Console after Cloudflare Pages deploys the change.

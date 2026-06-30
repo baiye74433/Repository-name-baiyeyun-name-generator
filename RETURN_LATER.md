@@ -134,3 +134,13 @@ Do not add more bulk pages or `ads.txt` before the Search Console status is chec
   - not indexed pages
   - 404 or redirect warnings
   - crawled but not indexed / discovered but not indexed
+
+## 2026-06-30 Sitemap Fallback
+
+- Search Console later showed `Couldn't fetch` for the XML sitemap, even though external fetch checks returned 200.
+- Added a plain-text fallback sitemap:
+  - `https://baiyeyun.xyz/sitemap.txt`
+- `sitemap.txt` contains the same 128 URLs as `sitemap.xml`, one URL per line.
+- `robots.txt` now points to both sitemap files.
+- The audit script now checks that both sitemap files stay in sync.
+- Next action: submit `https://baiyeyun.xyz/sitemap.txt` in Google Search Console.

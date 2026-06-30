@@ -129,3 +129,17 @@ git push origin main
 - Search Console showed: `Sitemap submitted successfully`.
 - Local audit after submission still passes: 78 tools, 43 blogs, 129 HTML pages, 128 sitemap URLs, `issues: []`.
 - Next step: wait for Google processing, then check indexing coverage and sitemap status in Search Console.
+
+## 2026-06-30 Search Console Sitemap Fallback
+
+- Search Console still shows `Couldn't fetch` for `https://baiyeyun.xyz/sitemap.xml`.
+- External checks show the XML sitemap is valid and reachable:
+  - `https://baiyeyun.xyz/sitemap.xml` returns 200.
+  - Googlebot user agent can fetch it.
+  - 128 URLs, 0 duplicate URLs, 0 `.html` URLs, 0 bad URLs.
+- Added `sitemap.txt` as a plain-text fallback sitemap with the same 128 URLs.
+- Updated `robots.txt` to reference both:
+  - `https://baiyeyun.xyz/sitemap.xml`
+  - `https://baiyeyun.xyz/sitemap.txt`
+- Extended `audit-adsense-readiness.js` to verify that `sitemap.txt` matches `sitemap.xml`.
+- Next Search Console action after deploy: submit `https://baiyeyun.xyz/sitemap.txt`.
